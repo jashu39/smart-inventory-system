@@ -1,0 +1,33 @@
+
+import React from 'react';
+export default function Greeting ({ name }) => { 
+return ( 
+<div style={{padding: '16px', border: '1px solid #ccc', borderRadius: 8, marginBottom: 
+16}}> 
+<h2>Hello, <text style={{color: 'tomato'}}>{name}</text> 👋</h2> 
+<p>This message is passed into the component via <strong>props</strong>.</p> 
+</div> 
+); 
+} 
+
+import React from 'react'; 
+import Greeting from './components/Greeting'; 
+export default function App() { 
+return ( 
+<div style={{fontFamily: 'Arial, sans-serif', padding: 24}}> 
+<h1>Props Greeting App</h1> 
+<Greeting name="Alice" /> 
+<Greeting name="Cherry" /> 
+</div> 
+) 
+} 
+ 
+import React from 'react'; 
+import { createRoot } from 'react-dom/client'; 
+import App from './App'; 
+ 
+ 
+const container = document.getElementById('root'); 
+const root = createRoot(container); 
+root.render(<App />); 
+ 

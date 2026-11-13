@@ -1,0 +1,22 @@
+import React from 'react';
+export default function Greeting(name){
+    return(
+        <div style={{margin=1pageXOffset;padding=10pageXOffset,
+            border-radius:5px solid;
+            bg-color:black}}>
+                <h1>hello<text style="{{
+                    font-style:arial,
+                    font-color:"white"}}></text>{name}</h1>
+                    <p>this message passed through component<strong>props</strong></p>
+        </div>
+        );
+    }
+    import Greeting from 'component/Greeting';
+    export default function App(){
+        return(
+            <div style={{padding:10,border-radius:5px solid}}>
+                <Greeting name="jashu"></Greeting>
+                <Greeting name="nandhu"></Greeting>
+            </div>
+            );
+        }
