@@ -29,7 +29,7 @@ app.use(errorHandler);
 const port = process.env.PORT || 5000;
 mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/smart_inventory_pro')
   .then(() => {
-    console.log('MongoDB connected successfully');
+    console.log('MongoDB is connected successfully');
     app.listen(port, () => console.log(`Smart Inventory API running on http://localhost:${port}`));
   })
   .catch((err) => {
